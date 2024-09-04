@@ -1,4 +1,4 @@
-package S3_Arrays1;
+package S3;
 
 public class FindMisingNumber {
 /*

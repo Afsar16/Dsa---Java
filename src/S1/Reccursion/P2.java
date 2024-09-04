@@ -1,6 +1,6 @@
-package S1_Learn_basics;
+package S1.Reccursion;
 
-public class Patterns1 {
+public class P2 {
     public static void main(String[] args) {
 
     }

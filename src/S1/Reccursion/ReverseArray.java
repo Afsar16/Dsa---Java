@@ -1,4 +1,4 @@
-package S1_Learn_basics.Reccursion;
+package S1.Reccursion;
 
 public class ReverseArray {
 
