@@ -21,6 +21,10 @@ class Dog1 extends Animal1 {
 public class _4Polymorphism_methodOverriding {
     public static void main(String[] args) {
         Animal1 myAnimal = new Dog1();
+        Dog1 myAnimal3 = new Dog1();
+        Animal1 myAnimal2 = new Animal1();
         myAnimal.sound(); // Output: The dog barks.
+        myAnimal2.sound(); // Output: This aninal makes a sound.
+        myAnimal3.sound(); // Output: This aninal makes a sound.
     }
 }
