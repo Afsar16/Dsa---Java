@@ -19,6 +19,9 @@ class Dog6 implements Animal6 {
     public void sleep() {
         System.out.println("Dog sleeps");
     }
+    public void eat() {
+        System.out.println("Dog is eating");
+    }
 }
 
 // Main class to test the implementation
@@ -27,5 +30,6 @@ public class _6Interface {
         Dog6 myDog = new Dog6();
         myDog.sound();  // Calls the sound method
         myDog.sleep();  // Calls the sleep method
+        myDog.eat();  // Calls the eat method
     }
 }

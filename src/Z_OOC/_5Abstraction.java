@@ -4,7 +4,15 @@ package Z_OOC;
 
 abstract class Animal2 {
     // Abstract method (does not have a body)
-    abstract void sound();
+//    abstract void sound() {
+//        System.out.println("hi");
+//    } // abstract method cannot have a body
+    // instead use like this
+    // abstract void sound();
+    // else we can override it like this
+    void sound() {
+        System.out.println("main class");
+    }
 
     // Regular method
     void eat() {
@@ -13,7 +21,6 @@ abstract class Animal2 {
 }
 
 class Dog2 extends Animal2 {
-    @Override
     void sound() {
         System.out.println("The dog barks.");
     }
@@ -21,6 +28,7 @@ class Dog2 extends Animal2 {
 
 public class _5Abstraction {
     public static void main(String[] args) {
+//        Dog2 myDog = new Animal2(); // Animal2 is abstract; cannot be instantiated
         Dog2 myDog = new Dog2();
         myDog.sound(); // Output: The dog barks.
         myDog.eat();   // Output: This animal is eating.
