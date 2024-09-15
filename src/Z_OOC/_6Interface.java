@@ -33,3 +33,4 @@ public class _6Interface {
         myDog.eat();  // Calls the eat method
     }
 }
+
