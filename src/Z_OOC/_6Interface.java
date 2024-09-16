@@ -31,6 +31,9 @@ public class _6Interface {
         myDog.sound();  // Calls the sound method
         myDog.sleep();  // Calls the sleep method
         myDog.eat();  // Calls the eat method
+        myDog.eat();  // Calls the eat method
+        myDog.eat();  // Calls the eat method
+        myDog.eat();  // Calls the eat method
     }
 }
 
