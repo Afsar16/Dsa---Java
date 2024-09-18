@@ -30,6 +30,8 @@ public class Main {
         arr.add(6);
         arr.add(7);
         arr.add(9);
+        arr.add(9);
+        arr.add(9);
 
         // Call the method and print the result
         int result = solution.pairWithMaxSum(arr);
