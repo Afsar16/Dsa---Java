@@ -18,7 +18,7 @@ public class QuickSort {
         }
     }
 
-    private static int findPartition(int[] arr, int begin, int end) {
+    int findPartition(int[] arr, int begin, int end) {
 
         // Taking last element as pivot element
         int pivot = arr[end];
@@ -41,7 +41,7 @@ public class QuickSort {
         return i + 1;
     }
 
-    private static void swap(int[] arr, int i, int j) {
+    void swap(int[] arr, int i, int j) {
         int swapTemp = arr[i];
         arr[i] = arr[j];
         arr[j] = swapTemp;
