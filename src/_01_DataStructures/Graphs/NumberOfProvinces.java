@@ -6,17 +6,17 @@ public class NumberOfProvinces {
             int num = 0;
             for(int i=0; i<visited.length; i++) {
                 if(visited[i] == 0) {
-                    helper(isConnected, visited, i);
+                    dfs(isConnected, visited, i);
                     num++;
                 }
             }
             return num;
         }
-        public static void helper(int [][] isConnected, int[] visited, int i) {
+        public static void dfs(int [][] isConnected, int[] visited, int i) {
             for(int j=0; j<isConnected.length; j++) {
                 if(isConnected[i][j] == 1 && visited[j] == 0) {
                     visited[j] = 1;
-                    helper(isConnected, visited, j);
+                    dfs(isConnected, visited, j);
                 }
             }
         }
@@ -25,9 +25,8 @@ public class NumberOfProvinces {
 
         // Example 1
         int[][] isConnected1 = {
-                {1, 1, 0},
-                {1, 1, 0},
-                {0, 0, 1}
+                {1, 1},
+                {1, 1}
         };
         System.out.println("Number of provinces: " + findCircleNum(isConnected1));
 
